@@ -16,6 +16,7 @@ BMS_TYPES: Final = [
     "jikong_bms",
     "ogt_bms",
     "seplos_bms",
+    "creabest_bms",
 ]  # available BMS types
 DOMAIN: Final = "bms_ble"
 LOGGER: Final = logging.getLogger(__package__)
