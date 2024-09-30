@@ -39,23 +39,6 @@ class BaseBMS(metaclass=ABCMeta):
         ble_device: the Bleak device to connect to
         reconnect: if true, the connection will be closed after each update
         """
----
-    @staticmethod
-    def matcher_dict_list() -> list[dict[str, Any]]:
-        """Provide BluetoothMatcher definition."""
-        return [
-            {
-                "local_name": "DL-*",
-                "service_uuid": UUID_SERVICE,
-                "connectable": True,
-            }
-        ]
-
-    @staticmethod
-    def device_info() -> dict[str, str]:
-        """Return device information for the battery management system."""
-        return {"manufacturer": "Daly", "model": "Smart BMS"}
----
 
     @staticmethod
     @abstractmethod
